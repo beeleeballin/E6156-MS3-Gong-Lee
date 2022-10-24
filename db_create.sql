@@ -1,10 +1,10 @@
 CREATE TABLE `Post` (
   `Post_ID` int AUTO_INCREMENT,
   `Title` varchar(50) NOT NULL,
-  `Author` varchar(30) NOT NULL,
+  `User_ID` varchar(30) NOT NULL,
   `Time` datetime NOT NULL,
   `Location_ID` int,
-  `Label` varchar(30),
+  `Label` enum('Administrative', 'Lost and Found', 'Call for Partners', 'Others'),
   `Content` longtext NOT NULL,
   PRIMARY KEY (`Post_ID`)
 );
@@ -12,7 +12,7 @@ CREATE TABLE `Post` (
 CREATE TABLE `Response` (
   `Response_ID` int AUTO_INCREMENT,
   `Post_ID` int,
-  `Author` varchar(50) NOT NULL,
+  `User_ID` varchar(30) NOT NULL,
   `Time` datetime NOT NULL,
   `Content` longtext NOT NULL,
   PRIMARY KEY (`Response_ID`),
@@ -21,7 +21,7 @@ CREATE TABLE `Response` (
 
 CREATE TABLE `Location` (
   `Location_ID` int  AUTO_INCREMENT,
-  `Name` varchar(50) NOT NULL,
+  `Name` varchar(50) UNIQUE NOT NULL,
   `Address` longtext NOT NULL,
   `Map_URL` longtext NOT NULL,
   PRIMARY KEY (`Location_ID`)
