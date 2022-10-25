@@ -6,6 +6,7 @@ CREATE TABLE `Post` (
   `Location_ID` int,
   `Label` enum('Administrative', 'Lost and Found', 'Call for Partners', 'Others'),
   `Content` longtext NOT NULL,
+  `Edited` boolean default 0,
   PRIMARY KEY (`Post_ID`)
 );
 
@@ -15,6 +16,7 @@ CREATE TABLE `Response` (
   `User_ID` varchar(30) NOT NULL,
   `Time` datetime NOT NULL,
   `Content` longtext NOT NULL,
+  `Edited` boolean default 0,
   PRIMARY KEY (`Response_ID`),
   FOREIGN KEY (`Post_ID`) REFERENCES `Post`(`Post_ID`) ON DELETE SET NULL
 );

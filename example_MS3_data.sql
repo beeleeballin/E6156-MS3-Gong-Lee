@@ -14,26 +14,26 @@ INSERT INTO Response (Post_ID, User_ID, Time, Content) VALUES (3, 'Yiru Gong', '
 INSERT INTO Response (Post_ID, User_ID, Time, Content) VALUES (3, 'Zheyan Liu', '2022-10-15 13:28:45', "No it's not I have a pink bottle");
 INSERT INTO Response (Post_ID, User_ID, Time, Content) VALUES (4, 'Brian Lee', '2022-10-16 21:35:14', "I'll be on main campus too. Want to grab dinner?");
 
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('1', 'Brian Lee');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('1', 'Keviant Kong');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('1', 'Zheyan Liu');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('1', 'Zhuolun Huang');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('2', 'Zhuolun Huang');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('2', 'Brian Lee');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('2', 'Zheyan Liu');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('3', 'Yiru Gong');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('4', 'Brian Lee');
-INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES ('4', 'Keviant Kong');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (1, 'Brian Lee');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (1, 'Keviant Kong');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (1, 'Zheyan Liu');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (1, 'Zhuolun Huang');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (2, 'Zhuolun Huang');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (2, 'Brian Lee');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (2, 'Zheyan Liu');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (3, 'Yiru Gong');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (4, 'Brian Lee');
+INSERT INTO Post_Thumbs (Post_ID, User_ID) VALUES (4, 'Keviant Kong');
 
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('1', 'Zheyan Liu');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('2', 'Keviant Kong');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('2', 'Yiru Gong');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('2', 'Zhuolun Huang');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('3', 'Zhuolun Huang');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('3', 'Brian Lee');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('5', 'Keviant Kong');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('5', 'Zhuolun Huang');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('5', 'Yiru Gong');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('5', 'Brian Lee');
-INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES ('6', 'Zheyan Liu');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (1, 'Zheyan Liu');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (2, 'Keviant Kong');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (2, 'Yiru Gong');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (2, 'Zhuolun Huang');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (3, 'Zhuolun Huang');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (3, 'Brian Lee');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (5, 'Keviant Kong');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (5, 'Zhuolun Huang');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (5, 'Yiru Gong');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (5, 'Brian Lee');
+INSERT INTO Response_Thumbs (Response_ID, User_ID) VALUES (6, 'Zheyan Liu');
 
