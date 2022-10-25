@@ -4,7 +4,7 @@ CREATE TABLE `Post` (
   `User_ID` varchar(30) NOT NULL,
   `Time` datetime NOT NULL,
   `Location_ID` int,
-  `Label` enum('Administrative', 'Lost and Found', 'Call for Partners', 'Others'),
+  `Label` varchar(30),
   `Content` longtext NOT NULL,
   `Edited` boolean default 0,
   PRIMARY KEY (`Post_ID`)
