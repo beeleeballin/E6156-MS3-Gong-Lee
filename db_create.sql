@@ -1,7 +1,7 @@
 CREATE TABLE `Post` (
   `Post_ID` int AUTO_INCREMENT,
   `Title` varchar(50) NOT NULL,
-  `User_ID` varchar(30) NOT NULL,
+  `User_ID` int NOT NULL,   # `User_ID` varchar(30) NOT NULL
   `Time` datetime NOT NULL,
   `Location_ID` int,
   `Label` enum('Administrative', 'Lost and Found', 'Call for Partners', 'Others'),
@@ -13,7 +13,7 @@ CREATE TABLE `Post` (
 CREATE TABLE `Response` (
   `Response_ID` int AUTO_INCREMENT,
   `Post_ID` int,
-  `User_ID` varchar(30) NOT NULL,
+  `User_ID` int NOT NULL,   # `User_ID` varchar(30) NOT NULL
   `Time` datetime NOT NULL,
   `Content` longtext NOT NULL,
   `Edited` boolean default 0,
@@ -32,7 +32,7 @@ CREATE TABLE `Location` (
 CREATE TABLE `Post_Thumbs` (
   `PT_ID` int AUTO_INCREMENT,
   `Post_ID` int,
-  `User_ID` varchar(50) NOT NULL,
+  `User_ID` int NOT NULL,   # `User_ID` varchar(30) NOT NULL
   PRIMARY KEY (`PT_ID`),
   UNIQUE (Post_ID, USER_ID),
   FOREIGN KEY (Post_ID) REFERENCES `Post`(`Post_ID`) ON DELETE SET NULL
@@ -41,7 +41,7 @@ CREATE TABLE `Post_Thumbs` (
 CREATE TABLE `Response_Thumbs` (
   `RT_ID` int AUTO_INCREMENT,
   `Response_ID` int,
-  `User_ID` varchar(50) NOT NULL,
+  `User_ID` int NOT NULL,   # `User_ID` varchar(30) NOT NULL
   PRIMARY KEY (`RT_ID`),
   UNIQUE (Response_ID, USER_ID),
   FOREIGN KEY (Response_ID) REFERENCES `Response`(`Response_ID`) ON DELETE SET NULL
