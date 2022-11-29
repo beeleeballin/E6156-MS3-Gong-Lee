@@ -18,7 +18,7 @@ CREATE TABLE `Response` (
   `Content` longtext NOT NULL,
   `Edited` boolean default 0,
   PRIMARY KEY (`Response_ID`),
-  FOREIGN KEY (`Post_ID`) REFERENCES `Post`(`Post_ID`) ON DELETE SET NULL
+  FOREIGN KEY (`Post_ID`) REFERENCES `Post`(`Post_ID`) ON DELETE CASCADE
 );
 
 CREATE TABLE `Location` (
@@ -35,7 +35,7 @@ CREATE TABLE `Post_Thumbs` (
   `User_ID` int NOT NULL,   # `User_ID` varchar(30) NOT NULL
   PRIMARY KEY (`PT_ID`),
   UNIQUE (Post_ID, USER_ID),
-  FOREIGN KEY (Post_ID) REFERENCES `Post`(`Post_ID`) ON DELETE SET NULL
+  FOREIGN KEY (Post_ID) REFERENCES `Post`(`Post_ID`) ON DELETE CASCADE
 );
 
 CREATE TABLE `Response_Thumbs` (
@@ -44,7 +44,7 @@ CREATE TABLE `Response_Thumbs` (
   `User_ID` int NOT NULL,   # `User_ID` varchar(30) NOT NULL
   PRIMARY KEY (`RT_ID`),
   UNIQUE (Response_ID, USER_ID),
-  FOREIGN KEY (Response_ID) REFERENCES `Response`(`Response_ID`) ON DELETE SET NULL
+  FOREIGN KEY (Response_ID) REFERENCES `Response`(`Response_ID`) ON DELETE CASCADE
 );
 
 ALTER TABLE Post
